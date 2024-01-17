@@ -1,0 +1,26 @@
+{
+    "extends": "@tsconfig/svelte/tsconfig.json",
+    "compilerOptions": {
+        "baseUrl": "./resources/js",
+        "paths": {
+            "@Components/*": [
+                "Components/*"
+            ],
+            "@Layouts/*": [
+                "Layouts/*"
+            ],
+            "@Models/*": [
+                "Models/*"
+            ]
+        }
+    },
+    "include": [
+        "resources/**/*.ts",
+        "src/node_modules/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules/*",
+        "__sapper__/*",
+        "public/*"
+    ]
+}
